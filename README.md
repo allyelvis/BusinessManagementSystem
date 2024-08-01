@@ -18,8 +18,8 @@ This is a Django-based business management system that helps manage customers, p
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/yourusername/business-management-system.git
-    cd business-management-system
+    git clone https://github.com/allyelvis/BusinessManagementSystem.git
+    cd BusinessManagementSystem
     ```
 
 2. Create a virtual environment and activate it:
