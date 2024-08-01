@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Business Management System</title>
+</head>
+<body>
+    <h1>Business Management System</h1>
+    <h2>Customers</h2>
+    <ul>
+        {% for customer in customers %}
+        <li><a href="{% url 'customer_detail' customer.id %}">{{ customer.name }}</a></li>
+        {% endfor %}
+    </ul>
+    
+    <h2>Products</h2>
+    <ul>
+        {% for product in products %}
+        <li><a href="{% url 'product_detail' product.id %}">{{ product.name }}</a></li>
+        {% endfor %}
+    </ul>
+    
+    <h2>Orders</h2>
+    <ul>
+        {% for order in orders %}
+        <li><a href="{% url 'order_detail' order.id %}">Order {{ order.id }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
